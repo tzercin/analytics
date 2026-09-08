@@ -1,0 +1,35 @@
+/*
+ * Chef personal visual system — candidate palette
+ * Status: proposed, not approved
+ * Source: Chef's gradient supplied 2026-08-20
+ */
+
+:root {
+  --brand-bg-top: #12101c;
+  --brand-bg-bottom: #0b0912;
+  --brand-surface: #171321;
+  --brand-surface-raised: #211a30;
+  --brand-border: #3a334a;
+
+  --brand-violet: #8250dc;
+  --brand-violet-bright: #9c72e8;
+  --brand-magenta: #d246a0;
+  --brand-magenta-bright: #e36db8;
+
+  --brand-text-primary: #f7f4ff;
+  --brand-text-secondary: #c9c2d8;
+  --brand-text-muted: #a39aaf;
+
+  --brand-background:
+    radial-gradient(
+      60% 50% at 22% 18%,
+      rgb(130 80 220 / 30%) 0%,
+      rgb(130 80 220 / 0%) 55%
+    ),
+    radial-gradient(
+      55% 50% at 82% 88%,
+      rgb(210 70 160 / 22%) 0%,
+      rgb(210 70 160 / 0%) 55%
+    ),
+    linear-gradient(180deg, var(--brand-bg-top) 0%, var(--brand-bg-bottom) 100%);
+}
