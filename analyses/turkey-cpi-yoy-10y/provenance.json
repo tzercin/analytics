@@ -1,0 +1,49 @@
+{
+  "source_owner": "Türkiye İstatistik Kurumu (TÜİK)",
+  "documentation_url": "https://veriportali.tuik.gov.tr/tr/sdmx-web-service-documentation",
+  "dataflow_title": "Ana harcama gruplarına göre tüketici fiyat endeksi (TÜFE) ve değişim oranları",
+  "dataflow_id": "DF_TUFE_SDMX_TT01",
+  "dataflow_version": "1.0",
+  "data_structure_id": "DSD_TUFE",
+  "data_structure_version": "1.12",
+  "series_key": "TR.M.TUFE.4._Z.2025.2026_01._Z.0.F_TFE",
+  "dimensions": {
+    "BASE_PER": "2025",
+    "COICOP_1999": "_Z",
+    "COICOP_2018": "0",
+    "DEGISIM": "4",
+    "FREQ": "M",
+    "INDICATOR": "F_TFE",
+    "OZEL_KAPSAM_TUFE": "_Z",
+    "REF_AREA": "TR",
+    "SINIFLAMA_DUZEYI": "TUFE",
+    "YAYIM_DONEMI": "2026_01"
+  },
+  "measure": "Bir önceki yılın aynı ayına göre (yıllık) değişim oranı (%)",
+  "unit": "percent",
+  "start_period": "2016-09",
+  "end_period": "2026-08",
+  "observation_count": 120,
+  "request_url": "https://nsiws.tuik.gov.tr/rest/data/TR,DF_TUFE_SDMX_TT01,1.0/TR.M.TUFE.4._Z.2025.2026_01._Z.0.F_TFE?endPeriod=2026-08&startPeriod=2016-09",
+  "retrieved_at": "2026-09-08T15:18:42+03:00",
+  "response_date": "Tue, 08 Sep 2026 12:18:42 GMT",
+  "response_content_type": "application/vnd.sdmx.genericdata+xml; charset=utf-8; version=2.1",
+  "message_id": "IREF502857",
+  "message_prepared": "2026-09-08T15:18:42",
+  "raw_byte_count": 15791,
+  "raw_sha256": "1d07f2dfa8b26bb939d92cec75bee03acd798e223deafba85a8225d8baf46a9e",
+  "raw_stored": false,
+  "csv_sha256": "8eda727c0a0dcc957305373e534e99f7a18ec8ed32dd566a50db6b854353f4f6",
+  "svg_sha256": "b6a688ba7445469fecd37d867a9afefb244854ce2c6eab06099bbe4b77e49523",
+  "cross_checks": [
+    "https://veriportali.tuik.gov.tr/en/press/58290 (August 2026: 31.51%)",
+    "https://veriportali.tuik.gov.tr/en/press/45799 (October 2022: 85.51%)"
+  ],
+  "validation": [
+    "exactly one data set and one series",
+    "series dimensions exactly match the documented selection",
+    "120 unique and consecutive monthly observations",
+    "all observation values are finite numbers",
+    "latest value reconciles to TÜİK August 2026 press release (31.51%)"
+  ]
+}
