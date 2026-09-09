@@ -1,0 +1,31 @@
+{
+  "analysis_id": "turkey-housing-and-car-sales",
+  "status": "local_draft",
+  "retrieved_at": "2026-09-09",
+  "period": {"start": "2013-01", "end": "2026-07", "months": 163},
+  "sources": {
+    "tuik_sdmx": {
+      "role": "numeric source and data owner",
+      "base_url": "https://nsiws.tuik.gov.tr/rest",
+      "documentation": "https://veriportali.tuik.gov.tr/tr/sdmx-web-service-documentation",
+      "housing": {"dataflow": "DF_SATIS_SEKLI_SATIS_DURUMU_V3", "version": "1.0", "series_key": "M._T.TR._Z._Z.2._Z._Z._T.MII_KSS._Z"},
+      "cars": {"dataflow": "DF_MOTORLU_KARA_TASIT_DEVRI_YAPILAN_V3", "version": "1.0", "series_key": "TR.M.U_DYMKTS.M01+M02+M03+M04+M05+M06+M07+M08+M09+M10+M11+M12._Z._Z._Z._Z._Z.1.PN._Z._Z._Z"}
+    },
+    "tcmb_evds": {
+      "role": "catalog cross-check for TÜİK housing-sales series",
+      "url": "https://evds2.tcmb.gov.tr/",
+      "note": "EVDS identifies the housing-sales series as TÜİK data; EVDS observations were not mixed into the committed files."
+    },
+    "tcmb_policy_rate": {
+      "role": "numeric source for month-end policy rate",
+      "url": "https://www.tcmb.gov.tr/wps/wcm/connect/en/tcmb+en/main+menu/core+functions/monetary+policy/central+bank+interest+rates/1+week+repo",
+      "measure": "one-week repo auction rate, percent",
+      "monthly_conversion": "last rate effective on or before each calendar month-end"
+    }
+  },
+  "definitions": {
+    "housing_sales": "Türkiye-wide registered total housing sales",
+    "car_sales": "Türkiye-wide notarized passenger-car transfers; a market-activity proxy, not an official sales measure"
+  },
+  "validation": ["163 observations per series", "continuous monthly periods", "unique periods", "non-negative integer counts", "policy-rate schedule transcribed from TCMB's official dated table"]
+}

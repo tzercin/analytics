@@ -59,3 +59,20 @@ package itself. Those remain analysis-specific provenance decisions.
 one TÜİK headline CPI series and generates a validated CSV, SVG chart, and
 provenance manifest for September 2016–August 2026. It is a local review draft;
 no output has been published.
+
+## Passenger-car transfers vs inflation
+
+[`analyses/turkey-used-car-transfers-vs-inflation`](analyses/turkey-used-car-transfers-vs-inflation)
+answers a second-hand car market question with the narrow measure TÜİK actually
+publishes: notarized passenger-car transfers as an explicitly labelled proxy,
+compared with headline CPI inflation from January 2010 through July 2026. It
+produces validated monthly and annual CSV files, a machine-readable summary, an
+SVG chart, and a detailed provenance manifest. It is a local review draft; no
+output has been published.
+
+## Housing and car-market activity
+
+[`analyses/turkey-housing-and-car-sales`](analyses/turkey-housing-and-car-sales)
+contains separate monthly housing-sales and passenger-car-transfer charts for
+January 2013–July 2026, with TÜİK SDMX provenance and a TCMB EVDS catalog
+cross-check.
