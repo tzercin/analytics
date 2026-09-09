@@ -1,0 +1,196 @@
+{
+  "analysis_id": "turkey-used-car-transfers-vs-inflation",
+  "status": "local review draft; not approved for publication",
+  "source_owner": "Türkiye İstatistik Kurumu (TÜİK)",
+  "retrieved_at": "2026-09-08T16:50:12+03:00",
+  "revision_vintage": "current live SDMX API vintage retrieved on 2026-09-08; vehicle release vintage Temmuz 2026 (published 2026-08-17); CPI selection YAYIM_DONEMI=2026_01 and BASE_PER=2025",
+  "locale": "Turkish labels selected from SDMX xml:lang=tr and the Turkish press-release metadata",
+  "encoding": "UTF-8, as declared by the source response content types",
+  "documentation_url": "https://veriportali.tuik.gov.tr/tr/sdmx-web-service-documentation",
+  "vehicle_transfers": {
+    "official_title": "Aylara Göre Devri Yapılan Motorlu Kara Taşıtları Sayısı",
+    "dataflow_id": "DF_MOTORLU_KARA_TASIT_DEVRI_YAPILAN_V3",
+    "dataflow_version": "1.0",
+    "data_structure_id": "DSD_MOTORLU_KARA_TASITLARI_V5",
+    "data_structure_version": "1.5",
+    "series_key": "TR.M.U_DYMKTS.M01+M02+M03+M04+M05+M06+M07+M08+M09+M10+M11+M12._Z._Z._Z._Z._Z.1.PN._Z._Z._Z",
+    "dimensions": {
+      "ARAC_KULLANIM_TUR": "_Z",
+      "ARAC_RENK": "_Z",
+      "ARAC_SILINDIR": "_Z",
+      "ARAC_TUR": "1",
+      "ARAC_YAS_GRUP": "_Z",
+      "AY": "M01+M02+M03+M04+M05+M06+M07+M08+M09+M10+M11+M12",
+      "FREQ": "M",
+      "INDICATOR": "U_DYMKTS",
+      "MARKA": "_Z",
+      "MODEL_YIL": "_Z",
+      "REF_AREA": "TR",
+      "TASIT_KAYIT": "_Z",
+      "UNIT_MEASURE": "PN",
+      "YAKIT_TUR": "_Z"
+    },
+    "turkish_labels": {
+      "ARAC_TUR=1": "Otomobil",
+      "AY=M01": "Ocak",
+      "AY=M02": "Şubat",
+      "AY=M03": "Mart",
+      "AY=M04": "Nisan",
+      "AY=M05": "Mayıs",
+      "AY=M06": "Haziran",
+      "AY=M07": "Temmuz",
+      "AY=M08": "Ağustos",
+      "AY=M09": "Eylül",
+      "AY=M10": "Ekim",
+      "AY=M11": "Kasım",
+      "AY=M12": "Aralık",
+      "FREQ=M": "Aylık",
+      "INDICATOR=U_DYMKTS": "Devri Yapılan Motorlu Kara Taşıtları Sayısı",
+      "REF_AREA=TR": "Türkiye",
+      "UNIT_MEASURE=PN": "Sayı"
+    },
+    "measure": "Devri Yapılan Motorlu Kara Taşıtları Sayısı — Otomobil",
+    "unit": "Sayı (tam sayı)",
+    "frequency": "Aylık",
+    "start_period": "2010-01",
+    "end_period": "2026-07",
+    "observation_count": 199,
+    "observation_status": "no SDMX observation-status attributes were present",
+    "response": {
+      "request_url": "https://nsiws.tuik.gov.tr/rest/data/TR,DF_MOTORLU_KARA_TASIT_DEVRI_YAPILAN_V3,1.0/TR.M.U_DYMKTS.M01+M02+M03+M04+M05+M06+M07+M08+M09+M10+M11+M12._Z._Z._Z._Z._Z.1.PN._Z._Z._Z?endPeriod=2026-07&startPeriod=2010-01",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:50:10 GMT",
+      "response_content_type": "application/vnd.sdmx.genericdata+xml; version=2.1; charset=utf-8",
+      "message_id": "IREF622066",
+      "message_prepared": "2026-09-08T16:50:10",
+      "raw_byte_count": 33081,
+      "raw_sha256": "b4c102f0f9068d6c9913e9a7f86f8ff00a7364bdd45c745980eb6d3ee641f833",
+      "raw_stored": false
+    }
+  },
+  "headline_cpi": {
+    "official_title": "Ana harcama gruplarına göre tüketici fiyat endeksi (TÜFE) ve değişim oranları",
+    "dataflow_id": "DF_TUFE_SDMX_TT01",
+    "dataflow_version": "1.0",
+    "data_structure_id": "DSD_TUFE",
+    "data_structure_version": "1.12",
+    "series_key": "TR.M.TUFE.4._Z.2025.2026_01._Z.0.F_TFE",
+    "dimensions": {
+      "BASE_PER": "2025",
+      "COICOP_1999": "_Z",
+      "COICOP_2018": "0",
+      "DEGISIM": "4",
+      "FREQ": "M",
+      "INDICATOR": "F_TFE",
+      "OZEL_KAPSAM_TUFE": "_Z",
+      "REF_AREA": "TR",
+      "SINIFLAMA_DUZEYI": "TUFE",
+      "YAYIM_DONEMI": "2026_01"
+    },
+    "turkish_labels": {
+      "COICOP_2018=0": "Genel",
+      "DEGISIM=4": "Bir önceki yılın aynı ayına göre (yıllık) değişim oranı (%)",
+      "FREQ=M": "Aylık",
+      "INDICATOR=F_TFE": "Tüketici Fiyat Endeksi (TÜFE)",
+      "REF_AREA=TR": "Türkiye"
+    },
+    "measure": "Bir önceki yılın aynı ayına göre (yıllık) değişim oranı (%)",
+    "unit": "yüzde",
+    "frequency": "Aylık",
+    "start_period": "2010-01",
+    "end_period": "2026-08",
+    "observation_count": 200,
+    "observation_status": "no SDMX observation-status attributes were present",
+    "response": {
+      "request_url": "https://nsiws.tuik.gov.tr/rest/data/TR,DF_TUFE_SDMX_TT01,1.0/TR.M.TUFE.4._Z.2025.2026_01._Z.0.F_TFE?endPeriod=2026-08&startPeriod=2010-01",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:50:12 GMT",
+      "response_content_type": "application/vnd.sdmx.genericdata+xml; charset=utf-8; version=2.1",
+      "message_id": "IREF136157",
+      "message_prepared": "2026-09-08T16:50:11",
+      "raw_byte_count": 25150,
+      "raw_sha256": "dd1955d52306376c0bdcd3dc555ef44bfff8f233fa5bdefce134bab6bd311a63",
+      "raw_stored": false
+    }
+  },
+  "verified_public_sources": [
+    {
+      "purpose": "vehicle dataflow title, description, and DSD reference",
+      "canonical_url": "https://nsiws.tuik.gov.tr/rest/dataflow/TR/DF_MOTORLU_KARA_TASIT_DEVRI_YAPILAN_V3/1.0?detail=full",
+      "retrieved_at": "2026-09-08T16:18:26+03:00",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:18:26 GMT",
+      "response_content_type": "application/vnd.sdmx.structure+xml; charset=utf-8; version=2.1",
+      "raw_byte_count": 1525,
+      "raw_sha256": "ca479ece2c74a616585dbff158c6142b660f1e4ea0ee38da8993f2fb15c69a41",
+      "raw_stored": false
+    },
+    {
+      "purpose": "vehicle DSD dimensions and Turkish codelist labels",
+      "canonical_url": "https://nsiws.tuik.gov.tr/rest/datastructure/TR/DSD_MOTORLU_KARA_TASITLARI_V5/1.5?detail=full&references=all",
+      "retrieved_at": "2026-09-08T16:18:49+03:00",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:18:49 GMT",
+      "response_content_type": "application/vnd.sdmx.structure+xml; version=2.1; charset=utf-8",
+      "raw_byte_count": 2610847,
+      "raw_sha256": "c6927015c693aa0697257e14cb62fb873523683709c5de301fd480cdf188e0c3",
+      "raw_stored": false
+    },
+    {
+      "purpose": "current vehicle definition, coverage, sources, calculation, and revision statement",
+      "canonical_url": "https://veriportali.tuik.gov.tr/tr/press/58045/metadata",
+      "retrieval_url": "https://veriportali.tuik.gov.tr/api/tr/press/58045",
+      "retrieved_at": "2026-09-08T16:25:20+03:00",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:25:20 GMT",
+      "response_content_type": "application/json; charset=utf-8",
+      "raw_byte_count": 366143,
+      "raw_sha256": "a5eefdb62a6d7effad7a575c7a51a63a231ebe588eccd90235f58fbad72e5907",
+      "raw_stored": false
+    },
+    {
+      "purpose": "reuse and attribution terms",
+      "canonical_url": "https://www.tuik.gov.tr/Kurumsal/Yasal_Uyari",
+      "retrieved_at": "2026-09-08T16:30:47+03:00",
+      "status_code": 200,
+      "response_date": "Tue, 08 Sep 2026 13:30:47 GMT",
+      "response_content_type": "text/html; charset=utf-8",
+      "raw_byte_count": 127672,
+      "raw_sha256": "032bc496d1121ce4995eb34c0639f8e9171e40c8a58ebc44c58034f92ceb2bc6",
+      "raw_stored": false
+    }
+  ],
+  "method": {
+    "annual": "sum transfer counts; arithmetic mean of the 12 monthly headline CPI annual rates; 2026 is January-July YTD and compared with January-July 2025",
+    "association": "Pearson and tie-aware Spearman correlations of the two monthly YoY series; descriptive only",
+    "join": "one-to-one inner join on 199 unique consecutive YYYY-MM periods",
+    "lagged_correlations": "not reported: serial dependence plus 25 candidate lags would invite multiple-testing interpretation without a prespecified economic model",
+    "operational_definition": "noterler aracılığıyla devri yapılan otomobil sayısı; second-hand activity proxy only",
+    "transfer_yoy": "100 * (transfers_t / transfers_t_minus_12 - 1), unrounded inputs"
+  },
+  "access_and_reuse": {
+    "authentication": "TÜİK's SDMX service requires a bearer token obtained with a Data Portal API key; TUIK_API_KEY is supplied only at runtime and is never stored or logged",
+    "rate_limits": "no numeric rate limit was stated in the inspected SDMX documentation; this generator makes only two sequential data requests per run",
+    "raw_storage": "source response bytes are not committed; only byte counts and SHA-256 digests are retained",
+    "reuse": "TÜİK's Yasal Uyarı states that website, publication, and database data may be reused without permission when TÜİK is cited"
+  },
+  "output_sha256": {
+    "annual.csv": "19264a9698dd70fa023cfa4b1d9bff3b95f573e9f99a23e8c94218a84e9ddfe4",
+    "comparison.svg": "0db710825e8f7cf13978a8dff75eedecb987fbfa6f82c4cb2d235bb974b22629",
+    "monthly.csv": "f005165d616e87ed6ba804d43492b4bc9d7cbc259372b945bb72eabee03921f3",
+    "summary.json": "83b4eac8333135700f1ce1c31f68862b1b5a2a4957a6b56c6f7346379eebfc36"
+  },
+  "cross_checks": [
+    "https://veriportali.tuik.gov.tr/tr/press/58045 (Temmuz 2026: 907,846 total transfers; passenger cars 64.8%; selected exact count 588,504)",
+    "https://veriportali.tuik.gov.tr/tr/press/58297 (Temmuz 2026 headline CPI annual rate: 31.75%)"
+  ],
+  "validation": [
+    "vehicle response contains one data set and exactly 12 non-cumulative calendar-month series (AY=M01 through M12)",
+    "vehicle and CPI dimensions exactly match documented selections; Turkish categories are not normalized",
+    "199 unique consecutive vehicle observations and 200 unique consecutive CPI observations; one-to-one common-period join for 2010-01 through 2026-07",
+    "transfer values are non-negative integers; CPI values and all calculated rates are finite",
+    "no observation-level status attributes, duplicates, or missing months; every selected vehicle month has exactly one CPI match (the source-only August 2026 CPI observation is outside the common period)",
+    "latest values reconcile to the July 2026 vehicle and CPI releases",
+    "CSV, JSON, and SVG writers are deterministic for identical validated inputs; output hashes record artifact drift"
+  ]
+}

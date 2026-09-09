@@ -1,0 +1,54 @@
+{
+  "analysis_id": "turkey-used-car-transfers-vs-inflation",
+  "operational_definition": {
+    "implemented_proxy": "Türkiye genelinde noterler aracılığıyla devri yapılan otomobil sayısı",
+    "requested_concept": "second-hand car market sales",
+    "source_measure": "Devri Yapılan Motorlu Kara Taşıtları Sayısı — Otomobil — Sayı",
+    "warning": "TÜİK bu seriyi satış, satış değeri veya tekil araç sayısı olarak tanımlamaz."
+  },
+  "period": {
+    "end": "2026-07",
+    "monthly_observations": 199,
+    "monthly_yoy_observations": 187,
+    "start": "2010-01"
+  },
+  "facts": {
+    "latest_complete_year": 2025,
+    "latest_complete_year_passenger_car_transfers": 7572528,
+    "latest_headline_cpi_yoy_percent": 31.75,
+    "latest_passenger_car_transfers": 588504,
+    "latest_period": "2026-07"
+  },
+  "calculations": {
+    "complete_year_growth_vs_average_inflation_pearson": {
+      "coefficient": -0.220042,
+      "n": 15
+    },
+    "latest_complete_year_average_monthly_headline_cpi_yoy_percent": 35.181667,
+    "latest_complete_year_transfers_yoy_percent": 6.602023,
+    "latest_passenger_car_transfers_yoy_percent": -13.469801,
+    "monthly_yoy_pearson": {
+      "coefficient": -0.055663,
+      "n": 187
+    },
+    "monthly_yoy_pearson_excluding_2020_03_through_2021_06": {
+      "coefficient": -0.089776,
+      "n": 171
+    },
+    "monthly_yoy_spearman": {
+      "coefficient": -0.205366,
+      "n": 187
+    }
+  },
+  "inference": {
+    "causality": "None inferred; inflation and transfers may both respond to omitted economic, credit, tax, supply, and policy factors.",
+    "descriptive_result": "The full-period year-over-year association is weak and not robust enough to support a causal claim."
+  },
+  "limitations": [
+    "The proxy records the published administrative transfer measure, not sale contracts or consideration paid.",
+    "The public aggregate does not identify unique vehicles, buyers, sellers, prices, or whether multiple transfers of one vehicle within a period are deduplicated.",
+    "Passenger cars only: minibuses, buses, motorcycles, small trucks, trucks, special-purpose vehicles, and tractors are excluded.",
+    "Counts are not seasonally adjusted; year-over-year comparisons reduce but do not eliminate calendar effects.",
+    "Correlation is descriptive, serial dependence is present, and no statistical or causal model is estimated."
+  ]
+}
