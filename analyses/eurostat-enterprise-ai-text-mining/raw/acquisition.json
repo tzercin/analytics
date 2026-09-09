@@ -1,0 +1,9 @@
+{
+  "request_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_eb_ai?freq=A&indic_is=E_AI_TTM&lang=en&nace_r2=C10-S951_X_K&sinceTimePeriod=2024&unit=PC_ENT&untilTimePeriod=2025",
+  "retrieved_at": "2026-09-09T14:33:25+03:00",
+  "response_date": "Wed, 09 Sep 2026 11:33:25 GMT",
+  "response_content_type": "application/json",
+  "raw_byte_count": 8732,
+  "raw_sha256": "28a91b3fc4a1b1f40b66ac60e9a1bc5c3d347d8b783730b66b0e9b76e9e4017d",
+  "dataset_updated": "2026-06-15T11:00:00+0200"
+}
