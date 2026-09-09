@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "Fixture",
+  "source": "ESTAT",
+  "updated": "2026-01-01T00:00:00+0100",
+  "value": {"0": 1.25, "1": 2.5, "3": 4.75},
+  "status": {"2": "|C"},
+  "id": ["geo", "time"],
+  "size": [2, 2],
+  "dimension": {
+    "geo": {
+      "label": "Geopolitical entity (reporting)",
+      "category": {
+        "index": {"TR": 1, "EU27_2020": 0},
+        "label": {"EU27_2020": "European Union - 27 countries (from 2020)", "TR": "Türkiye"}
+      }
+    },
+    "time": {
+      "label": "Time",
+      "category": {
+        "index": {"2025": 1, "2024": 0},
+        "label": {"2024": "2024", "2025": "2025"}
+      }
+    }
+  },
+  "extension": {
+    "lang": "EN",
+    "id": "FIXTURE",
+    "agencyId": "ESTAT",
+    "version": "1.0",
+    "datastructure": {"id": "FIXTURE", "agencyId": "ESTAT", "version": "1.0"},
+    "annotation": [],
+    "status": {"label": {"|C": "|confidential"}},
+    "positions-with-no-data": {"geo": [], "time": []}
+  }
+}

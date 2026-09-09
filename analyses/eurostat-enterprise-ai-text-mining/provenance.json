@@ -1,0 +1,302 @@
+{
+  "status": "local analysis draft; not approved for publication",
+  "question": "Across EU-27 member countries and Türkiye, how did enterprise use of AI text mining change from 2024 to 2025, and how did 2025 use differ by enterprise size?",
+  "source_owner": "Eurostat",
+  "source_type": "primary official survey dataset",
+  "dataset_title": "Artificial intelligence by size class of enterprise",
+  "dataset_code": "isoc_eb_ai",
+  "dataset_doi": "10.2908/ISOC_EB_AI",
+  "dataset_version": "1.0",
+  "data_structure_id": "ISOC_EB_AI",
+  "data_structure_version": "45.0",
+  "landing_page": "https://ec.europa.eu/eurostat/databrowser/view/isoc_eb_ai/default/table?lang=en",
+  "api_documentation": "https://ec.europa.eu/eurostat/web/user-guides/data-browser/api-data-access/api-getting-started/api",
+  "methodology_url": "https://ec.europa.eu/eurostat/cache/metadata/en/isoc_e_esms.htm",
+  "results_report_url": "https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-009",
+  "reuse_url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+  "revision_policy_url": "https://ec.europa.eu/eurostat/data/data-revision-policy",
+  "reuse_conclusion": "Eurostat statistical data and metadata may be reused commercially or non-commercially with source acknowledgement; modified data/presentation must be identified and carry a non-responsibility disclaimer. No third-party material is included.",
+  "request": {
+    "request_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/isoc_eb_ai?freq=A&indic_is=E_AI_TTM&lang=en&nace_r2=C10-S951_X_K&sinceTimePeriod=2024&unit=PC_ENT&untilTimePeriod=2025",
+    "retrieved_at": "2026-09-09T14:33:25+03:00",
+    "response_date": "Wed, 09 Sep 2026 11:33:25 GMT",
+    "response_content_type": "application/json",
+    "raw_byte_count": 8732,
+    "raw_sha256": "28a91b3fc4a1b1f40b66ac60e9a1bc5c3d347d8b783730b66b0e9b76e9e4017d",
+    "dataset_updated": "2026-06-15T11:00:00+0200"
+  },
+  "dataset_updated": "2026-06-15T11:00:00+0200",
+  "structure_updated": "2025-12-11T11:00:00+0100",
+  "dimensions": [
+    {
+      "id": "freq",
+      "label": "Time frequency",
+      "selected_codes": {
+        "A": "Annual"
+      }
+    },
+    {
+      "id": "size_emp",
+      "label": "Size classes in number of persons employed",
+      "selected_codes": {
+        "10-49": "From 10 to 49 persons employed",
+        "50-249": "From 50 to 249 persons employed",
+        "GE10": "10 persons employed or more",
+        "GE250": "250 persons employed or more"
+      }
+    },
+    {
+      "id": "nace_r2",
+      "label": "Statistical classification of economic activities in the European Community (NACE Rev. 2)",
+      "selected_codes": {
+        "C10-S951_X_K": "All activities (except agriculture, forestry and fishing, and mining and quarrying), without financial sector"
+      }
+    },
+    {
+      "id": "indic_is",
+      "label": "Information society indicator",
+      "selected_codes": {
+        "E_AI_TTM": "Enterprises using AI technologies performing analysis of written language (text mining)"
+      }
+    },
+    {
+      "id": "unit",
+      "label": "Unit of measure",
+      "selected_codes": {
+        "PC_ENT": "Percentage of enterprises"
+      }
+    },
+    {
+      "id": "geo",
+      "label": "Geopolitical entity (reporting)",
+      "selected_codes": {
+        "AT": "Austria",
+        "BE": "Belgium",
+        "BG": "Bulgaria",
+        "CY": "Cyprus",
+        "CZ": "Czechia",
+        "DE": "Germany",
+        "DK": "Denmark",
+        "EE": "Estonia",
+        "EL": "Greece",
+        "ES": "Spain",
+        "EU27_2020": "European Union - 27 countries (from 2020)",
+        "FI": "Finland",
+        "FR": "France",
+        "HR": "Croatia",
+        "HU": "Hungary",
+        "IE": "Ireland",
+        "IT": "Italy",
+        "LT": "Lithuania",
+        "LU": "Luxembourg",
+        "LV": "Latvia",
+        "MT": "Malta",
+        "NL": "Netherlands",
+        "PL": "Poland",
+        "PT": "Portugal",
+        "RO": "Romania",
+        "SE": "Sweden",
+        "SI": "Slovenia",
+        "SK": "Slovakia",
+        "TR": "Türkiye"
+      }
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "selected_codes": {
+        "2024": "2024",
+        "2025": "2025"
+      }
+    }
+  ],
+  "included_geographies": [
+    {
+      "code": "EU27_2020",
+      "role": "eu27_aggregate"
+    },
+    {
+      "code": "BE",
+      "role": "eu27_member"
+    },
+    {
+      "code": "BG",
+      "role": "eu27_member"
+    },
+    {
+      "code": "CZ",
+      "role": "eu27_member"
+    },
+    {
+      "code": "DK",
+      "role": "eu27_member"
+    },
+    {
+      "code": "DE",
+      "role": "eu27_member"
+    },
+    {
+      "code": "EE",
+      "role": "eu27_member"
+    },
+    {
+      "code": "IE",
+      "role": "eu27_member"
+    },
+    {
+      "code": "EL",
+      "role": "eu27_member"
+    },
+    {
+      "code": "ES",
+      "role": "eu27_member"
+    },
+    {
+      "code": "FR",
+      "role": "eu27_member"
+    },
+    {
+      "code": "HR",
+      "role": "eu27_member"
+    },
+    {
+      "code": "IT",
+      "role": "eu27_member"
+    },
+    {
+      "code": "CY",
+      "role": "eu27_member"
+    },
+    {
+      "code": "LV",
+      "role": "eu27_member"
+    },
+    {
+      "code": "LT",
+      "role": "eu27_member"
+    },
+    {
+      "code": "LU",
+      "role": "eu27_member"
+    },
+    {
+      "code": "HU",
+      "role": "eu27_member"
+    },
+    {
+      "code": "MT",
+      "role": "eu27_member"
+    },
+    {
+      "code": "NL",
+      "role": "eu27_member"
+    },
+    {
+      "code": "AT",
+      "role": "eu27_member"
+    },
+    {
+      "code": "PL",
+      "role": "eu27_member"
+    },
+    {
+      "code": "PT",
+      "role": "eu27_member"
+    },
+    {
+      "code": "RO",
+      "role": "eu27_member"
+    },
+    {
+      "code": "SI",
+      "role": "eu27_member"
+    },
+    {
+      "code": "SK",
+      "role": "eu27_member"
+    },
+    {
+      "code": "FI",
+      "role": "eu27_member"
+    },
+    {
+      "code": "SE",
+      "role": "eu27_member"
+    },
+    {
+      "code": "TR",
+      "role": "comparison_country"
+    }
+  ],
+  "observation_count": 232,
+  "missing_observation_count": 0,
+  "status_counts": {},
+  "status_labels": {
+    "|C": "|confidential"
+  },
+  "multiplier_metadata": "not supplied by this JSON-stat response; PC_ENT values are published percentages",
+  "decimals_metadata": "not supplied by this JSON-stat response; numeric lexemes are preserved in observations.csv and calculations are displayed to two decimal places",
+  "calculations": {
+    "change_2024_2025_percentage_points": "all_enterprises_2025_percent - all_enterprises_2024_percent",
+    "large_minus_small_2025_percentage_points": "large_2025_percent - small_2025_percent"
+  },
+  "cross_checks": [
+    "2026 Eurostat report Table 2: EU text-mining shares round to 6.9% (2024), 11.8% (2025), 9.9% small, 18.2% medium and 35.0% large (2025)",
+    "2025 Eurostat news article: EU text-mining share 11.8%"
+  ],
+  "validation": [
+    "duplicate JSON object keys rejected before decoding",
+    "JSON-stat id order, sizes, complete category indexes and positional products validated",
+    "unexpected top-level, dimension and extension fields rejected",
+    "selected identifiers and live labels validated; data and structure versions recorded",
+    "232 unique selected keys; every value present, finite and in [0,100]",
+    "missing values and source statuses decoded separately; source status labels retained",
+    "EU selected observations reconciled to independently presented rounded values in the official 2026 report"
+  ],
+  "limitations": [
+    "survey self-report and sampling/non-sampling error; no standard errors in selected slice",
+    "annual questionnaire and national methodology changes can limit comparisons",
+    "latest Eurostat database values are revisable",
+    "denominator is enterprises in each size class within covered NACE activities",
+    "enterprise technology use is not vendor count, revenue, productivity or market size"
+  ],
+  "transformation_command": "go run ./cmd/eurostatai",
+  "refresh_command": "go run ./cmd/eurostatai -fetch",
+  "go_version": "go1.27.1",
+  "outputs": {
+    "README.md": {
+      "layer": "presentation",
+      "bytes": 7016,
+      "sha256": "f3b8d9e7c06e24453d80885349f6f3e018c0c9bb4c46d5f101b37b5f9426066b"
+    },
+    "country-summary.csv": {
+      "layer": "derived",
+      "bytes": 2122,
+      "sha256": "4f2f48a6682442b352a1772012bc7bc01e3bec6cd56d0b80fb805015addb85a3"
+    },
+    "observations.csv": {
+      "layer": "derived",
+      "bytes": 76352,
+      "sha256": "259e582be1d6e618e12d39d78e602d610c35e562efe555fb77d186a3d2600d9a"
+    },
+    "raw/acquisition.json": {
+      "layer": "raw metadata",
+      "bytes": 515,
+      "sha256": "bc8f5f46a07a4dbc3621c2d56efb3bd0fb6ae6be6ebce3fd92f8188bc635e022"
+    },
+    "raw/isoc_eb_ai_E_AI_TTM_2024_2025.json": {
+      "layer": "raw",
+      "bytes": 8732,
+      "sha256": "28a91b3fc4a1b1f40b66ac60e9a1bc5c3d347d8b783730b66b0e9b76e9e4017d"
+    },
+    "text-mining-adoption.svg": {
+      "layer": "presentation",
+      "bytes": 27404,
+      "sha256": "f309d31154f0a2231cf87331c56dec331c7ae6f6bd97d3af9e9b11d14dc81f7e"
+    }
+  },
+  "unresolved_gates": [
+    "No numeric request-per-second quota was found in the official Statistics API guides checked on 2026-09-09; refresh is intentionally one request and honours HTTP 429 Retry-After."
+  ],
+  "review_gate": "Maintainer must review source rights, question, calculations, caveats and generated artifacts before publication."
+}

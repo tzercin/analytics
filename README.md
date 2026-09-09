@@ -76,3 +76,26 @@ output has been published.
 contains separate monthly housing-sales and passenger-car-transfer charts for
 January 2013–July 2026, with TÜİK SDMX provenance and a TCMB EVDS catalog
 cross-check.
+## Eurostat enterprise AI analysis
+
+The `eurostat` package validates the Eurostat statistics API's JSON-stat 2
+shape, including positional indexes, sparse missing values, status flags,
+duplicate JSON keys, schema drift and bounded HTTP retries.
+
+[`analyses/eurostat-enterprise-ai-text-mining`](analyses/eurostat-enterprise-ai-text-mining)
+compares the percentage of enterprises using AI to analyse written language in
+2024 and 2025 across the EU-27 members and Türkiye, with a 2025 enterprise-size
+breakdown. It stores the small authoritative raw snapshot and acquisition
+receipt, and deterministically generates tidy CSVs, an accessible SVG,
+methodology/findings, and a checksum-rich provenance manifest.
+
+```sh
+# Reproduce from the stored snapshot without network access.
+go run ./cmd/eurostatai
+
+# Explicitly refresh the snapshot with one bounded API request.
+go run ./cmd/eurostatai -fetch
+```
+
+The analysis is a local review draft. No result has been approved for
+publication.
