@@ -1,0 +1,199 @@
+{
+  "source_owner": "Türkiye İstatistik Kurumu (TÜİK)",
+  "documentation_url": "https://veriportali.tuik.gov.tr/tr/sdmx-web-service-documentation",
+  "landing_page_url": "https://veriportali.tuik.gov.tr/",
+  "retrievals": {
+    "fertility": {
+      "request_url": "https://nsiws.tuik.gov.tr/rest/data/TR,DF_DOGUM_TEMEL_DOG_GOST_C,1.0/TR.A.NG_TDH._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z.2026_01?endPeriod=2025&startPeriod=2007",
+      "retrieved_at": "2026-09-10T12:47:07+03:00",
+      "response_date": "Thu, 10 Sep 2026 09:47:07 GMT",
+      "response_content_type": "application/vnd.sdmx.genericdata+xml; version=2.1; charset=utf-8",
+      "message_id": "IREF624813",
+      "message_prepared": "2026-09-10T12:47:07",
+      "raw_sha256": "0967121d9988d906ea33dee6d6173ffd0086b679851fc8a8078564a4bff12e19",
+      "raw_byte_count": 6017
+    },
+    "population": {
+      "request_url": "https://nsiws.tuik.gov.tr/rest/data/TR,DF_ADNKS_T16,1.0/TR.A.NG_ADNKS._Z._Z._Z._Z._T._Z._Z._Z._Z._Z._Z.1+2.Y0T4+Y5T9+Y10T14+Y15T19+Y20T24+Y25T29+Y30T34+Y35T39+Y40T44+Y45T49+Y50T54+Y55T59+Y60T64+Y65T69+Y70T74+Y75T79+Y80T84+Y85T89+Y_GE90._Z._Z._Z.NUFUS?endPeriod=2025&startPeriod=2007",
+      "retrieved_at": "2026-09-10T12:47:09+03:00",
+      "response_date": "Thu, 10 Sep 2026 09:47:09 GMT",
+      "response_content_type": "application/vnd.sdmx.genericdata+xml; version=2.1; charset=utf-8",
+      "message_id": "IREF624814",
+      "message_prepared": "2026-09-10T12:47:09",
+      "raw_sha256": "bd2ef340265535924e44f1a0618d245ceeb1006a1b009ac58e9246db320e01f2",
+      "raw_byte_count": 123105
+    }
+  },
+  "sources": {
+    "fertility": {
+      "classification": "primary official dataset",
+      "data_structure_id": "DSD_DOGUM",
+      "data_structure_version": "1.1",
+      "dataflow_id": "DF_DOGUM_TEMEL_DOG_GOST_C",
+      "dataflow_title": "Temel Doğurganlık Göstergeleri",
+      "dataflow_version": "1.0",
+      "indicator_code": "NG_TDH",
+      "indicator_label_tr": "Toplam Doğurganlık Hızı (Çocuk Sayısı)",
+      "ordered_dimensions": [
+        "REF_AREA",
+        "FREQ",
+        "INDICATOR",
+        "CINSIYET_BEBEK",
+        "ANNE_EGITIM_DURUMU",
+        "KENT_KIR",
+        "ANNE_YAS_GRUP",
+        "ANNE_DOGUM_SIRA",
+        "AYLIK_DOGUM_ARALIK",
+        "COGUL_DOGUM",
+        "DOGUM_SIRASI",
+        "ANNE_UYRUK",
+        "BABA_UYRUK",
+        "EVLILIK_SURE",
+        "ANNE_DOG_ULKE",
+        "BABA_YAS_GRUP",
+        "ANNE_MEDENI_DURUM",
+        "AY",
+        "YAYIM_DONEMI"
+      ],
+      "publication_vintage": "2026_01",
+      "series_key": "TR.A.NG_TDH._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z._Z.2026_01",
+      "status_codes": [
+        "A",
+        "R"
+      ],
+      "unit": "çocuk sayısı"
+    },
+    "population": {
+      "age_codelist": "CL_YAS 1.1",
+      "classification": "primary official dataset",
+      "data_structure_id": "DSD_ADNKS",
+      "data_structure_version": "1.7",
+      "dataflow_id": "DF_ADNKS_T16",
+      "dataflow_title": "İl, Yaş Grubu ve Cinsiyete Göre Nüfus",
+      "dataflow_version": "1.0",
+      "ordered_dimensions": [
+        "REF_AREA",
+        "FREQ",
+        "INDICATOR",
+        "NUFUS_KAYIT_IL",
+        "YERLESIM_YERI_TUR",
+        "VATANDASLIK_ULKESI",
+        "DOGUM_YERI_IL",
+        "IKAMET_YERI",
+        "DOGUM_YERI_DURUM",
+        "DOGUM_YERI_ULKE",
+        "YAS",
+        "DOGUM_YIL",
+        "HANEHALKI_TIPI",
+        "HANEHALKI_BUYUKLUGU",
+        "SEX",
+        "YAS_GRUBU",
+        "ERKEK_ISIM",
+        "KADIN_ISIM",
+        "CIVIL_STATUS",
+        "ADNKS_GOSTERGE"
+      ],
+      "selection": {
+        "ADNKS_GOSTERGE": "NUFUS",
+        "IKAMET_YERI": "_T (Toplam)",
+        "SEX": "1 (Erkek), 2 (Kadın)"
+      },
+      "series_key": "TR.A.NG_ADNKS._Z._Z._Z._Z._T._Z._Z._Z._Z._Z._Z.1+2.Y0T4+Y5T9+Y10T14+Y15T19+Y20T24+Y25T29+Y30T34+Y35T39+Y40T44+Y45T49+Y50T54+Y55T59+Y60T64+Y65T69+Y70T74+Y75T79+Y80T84+Y85T89+Y_GE90._Z._Z._Z.NUFUS",
+      "sex_codelist": "CL_CINSIYET 1.1",
+      "status_codes": [
+        "not supplied"
+      ],
+      "unit": "kişi"
+    }
+  },
+  "period": {
+    "end_year": 2025,
+    "start_year": 2007,
+    "year_count": 19
+  },
+  "output_sha256": {
+    "fertility-population-pyramid.gif": "4676c5e24334a4297eab3dccb8ad482e4024cd95f406b9111f5a27dfde47d300",
+    "fertility.csv": "9f2c30cd35ce9c8d719e12eac1a5c0edcbb20fa37b2e4f671e600ba24bad1cb2",
+    "frames/2007.png": "fbd4574fc1544928e211ed7e3b1740a00ab40ff8a907e21a940e38ed4ca1d687",
+    "frames/2008.png": "9d619744d5647cd76f30e637b8c5f61149f648f6fd1a4edc1cf440c802a38d42",
+    "frames/2009.png": "c31d06589fbce905ba024903e2b47befcac83f5292338b7e650b25a1d16863cf",
+    "frames/2010.png": "533fafdd5f98571baaf4c620cdd492ea6022276b052dbe13c2f79eb8cef7cc02",
+    "frames/2011.png": "fda163adc654b23936b2cf68b2ce5cb18bb4bc1189f131ddd7e73f5558f0083c",
+    "frames/2012.png": "094f45a58ba9cdd8f7fa4a95ff2150a78f45627e1c0eeb3ed5dc820c11da34ff",
+    "frames/2013.png": "efcc023f427cbe151fdbd6255c853d2bf905066b8a9a00ac8a9c5deb1dab6fea",
+    "frames/2014.png": "54810011f362125ff3712803beaac84258198b2ae956f0bd66e235ecd875f4b5",
+    "frames/2015.png": "fc46787c41ed09e3b474ac564c60885495120792f8f8fc5557bc69201fc3112a",
+    "frames/2016.png": "936545b429b24de134f69c48a4ce4161230ec6d7b608826fc286aba330165d20",
+    "frames/2017.png": "bb199564bfeacdade338120929b42d564ac794274e8a5afa17e8a6d4ebae9992",
+    "frames/2018.png": "d167f2d7d30fc45adf3db57323882558e758304cc64c8269c99c997fd5d48031",
+    "frames/2019.png": "746a68c9b86ed453dd19d60165fde30b91fea82707220db550b941876e409e23",
+    "frames/2020.png": "63c49355f367c4c85b298a6fe8c7a2a21ca2638d7907ca64837a8008c0fdcbac",
+    "frames/2021.png": "c129ebd0577aeedfede9a7ddd1a63c5581ae843e2c94e5be20a89f077b5ccf0d",
+    "frames/2022.png": "7ee33cc5b3e60c36dd9756faf94fff9061bf4a814c39f68b87214831da98c7b5",
+    "frames/2023.png": "cc0c50ac423c629baaf01854faa1a37a9fe28abcc0951b0364e1c2f8f5b2a252",
+    "frames/2024.png": "9bb7148b4aec7b1180345e86303b49b707442e5300c5530b3b3f4340d3a55c48",
+    "frames/2025.png": "b10210b84ae1b92f9fa1a513cb2e7a436f38c3cc238f5f85e75dbd66d8850f79",
+    "population.csv": "2dea5806a3565004713d26d1a3e01ebd9a959452c2fd818f5c59673d96af00c4"
+  },
+  "raw_stored": false,
+  "raw_policy": "Exact response bytes are not stored because redistribution terms remain unresolved; request URLs, timestamps, sizes and SHA-256 checksums bind the responses and -fetch repeats the deterministic queries.",
+  "license_reuse_conclusion": "UNRESOLVED — public access was verified, but data-specific reuse/redistribution terms were not found; maintainer review is required before publication.",
+  "cross_checks": [
+    "Fertility 2024 current-vintage raw value = 1.4881566134354 with OBS_STATUS=R. The earlier TÜİK Birth Statistics, 2024 headline reported 1.48; this is a revision/vintage difference and is not represented as an exact match.",
+    "Population 2025 sum of the 38 selected age-sex cells = 86,092,168, exactly matching the all-age/all-sex total in TÜİK dataflow DF_ADNKS_T27 for 2025."
+  ],
+  "validation": [
+    "19 consecutive shared annual periods",
+    "one fertility series with exact 19-dimension key",
+    "38 population series: 19 age groups × 2 sex codes",
+    "all expected age-sex-year cells present exactly once",
+    "age-sex cells sum to 86,092,168 in 2025",
+    "missing and status attributes preserved; no interpolation",
+    "2014 is the selected-period fertility maximum and every subsequent annual value is lower than the preceding year"
+  ],
+  "unresolved_gates": [
+    "data-specific license and output redistribution permission",
+    "published API rate limit",
+    "formal revision schedule"
+  ],
+  "generator": {
+    "command_from_derived": "go run ./cmd/fertilitypyramid",
+    "determinism": "same repository revision and derived CSV bytes produce byte-identical yearly PNG and animated GIF bytes",
+    "module_licenses": "golang.org/x/image, golang.org/x/text, golang.org/x/sys: BSD-3-Clause",
+    "refresh_command": "go run ./cmd/fertilitypyramid -fetch",
+    "software": "Go 1.27 (go.mod)",
+    "text_renderer": "golang.org/x/image v0.46.0 opentype, HintingNone",
+    "transitive_modules": "golang.org/x/text v0.42.0; golang.org/x/sys v0.48.0"
+  },
+  "font": {
+    "asset": "cmd/fertilitypyramid/assets/Roboto-Regular.ttf",
+    "byte_count": 515100,
+    "family": "Roboto",
+    "license": "Apache License 2.0",
+    "license_asset": "cmd/fertilitypyramid/assets/Roboto-LICENSE.txt",
+    "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "license_url": "https://raw.githubusercontent.com/googlefonts/roboto-2/38062f4b4a0be4346d07a928408da21602545e9e/LICENSE",
+    "redistribution": "permitted with included license; no machine-local font is used",
+    "sha256": "56a45233d29f11b4dfb86d248e921939d115778f87325e7ae8cc108383d6664d",
+    "source_commit": "38062f4b4a0be4346d07a928408da21602545e9e",
+    "source_url": "https://raw.githubusercontent.com/googlefonts/roboto-2/38062f4b4a0be4346d07a928408da21602545e9e/src/hinted/Roboto-Regular.ttf",
+    "style": "Regular"
+  },
+  "structural_metadata_discovery": [
+    {
+      "raw_byte_count": 3282194,
+      "raw_sha256": "fac1043d8d3c99a9df210f6ecd3e2a8845a1429c321ec9c105f95a940e652660",
+      "raw_stored": false,
+      "request_url": "https://nsiws.tuik.gov.tr/rest/dataflow/TR/DF_DOGUM_TEMEL_DOG_GOST_C/1.0?detail=full&references=all",
+      "retrieved_at": "2026-09-10T12:30:59+03:00"
+    },
+    {
+      "note": "Resolved DSD_ADNKS 1.7 and codelists; DF_ADNKS_T16 uses the same DSD.",
+      "raw_byte_count": 2692853,
+      "raw_sha256": "d038c50422d13c8dbafb24d0ce3cb7b22c4c21a5756b24e11d22fa962cd47227",
+      "raw_stored": false,
+      "request_url": "https://nsiws.tuik.gov.tr/rest/dataflow/TR/DF_ADNKS_T27/1.1?detail=full&references=all",
+      "retrieved_at": "2026-09-10T12:30:59+03:00"
+    }
+  ]
+}

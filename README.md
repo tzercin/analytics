@@ -100,6 +100,15 @@ go run ./cmd/eurostatai -fetch
 The analysis is a local review draft. No result has been approved for
 publication.
 
+## Fertility and population age structure
+
+[`analyses/turkey-fertility-population-pyramid`](analyses/turkey-fertility-population-pyramid)
+animates TÜİK's total fertility rate beside a synchronized ADNKS population
+pyramid for 2007–2025. The deterministic Go generator produces two tidy CSVs,
+19 separate yearly PNGs, and checksum-rich provenance; its
+repository-contained Roboto font keeps Turkish typography reproducible without
+host-font discovery. It is a local review draft with source-rights and
+methodology review gates; nothing has been published.
 ## Repository administration
 
 [`docs/github-branch-protection.md`](docs/github-branch-protection.md) documents
