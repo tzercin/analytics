@@ -109,3 +109,17 @@ pyramid for 2007–2025. The deterministic Go generator produces two tidy CSVs,
 repository-contained Roboto font keeps Turkish typography reproducible without
 host-font discovery. It is a local review draft with source-rights and
 methodology review gates; nothing has been published.
+## Repository administration
+
+[`docs/github-branch-protection.md`](docs/github-branch-protection.md) documents
+a local, unapplied repository-ruleset proposal for `master`. The policy lives in
+[`.github/rulesets/protect-master.json`](.github/rulesets/protect-master.json)
+and is applied with `gh` through a small wrapper that defaults to a read-only
+diff; every mutation additionally requires an explicit subcommand and the
+confirmation token printed by an immediately preceding dry run.
+
+```sh
+scripts/github-ruleset.sh validate   # offline schema and policy checks
+scripts/github-ruleset.sh plan       # live, read-only diff
+scripts/github-ruleset_test.sh       # offline test suite
+```
